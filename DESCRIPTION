@@ -1,6 +1,6 @@
 Package: LPDynR
 Title: Land Productivity Dynamics Indicator
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
     person("Xavier", "Rotllan-Puig", email = "xavier.rotllan.puig@aster-projects.cat", role = c("aut", "cre")),
     person("Eva", "Ivits", email = "", role = c("aut")),
@@ -9,8 +9,8 @@ Description: It uses 'phenological' and productivity-related variables derived f
     indexes, such as the Normalized Difference Vegetation Index, to assess ecosystem dynamics and change, which 
     eventually might drive to land degradation. The final result of the Land Productivity Dynamics indicator 
     is a categorical map with 5 classes of land productivity dynamics, ranging from declining to increasing 
-    productivity. See <https://github.com/xavi-rp/LPD/blob/master/ATBD/LPD_ATBD.pdf> for a description of the 
-    methods used in the package to calculate the indicator.
+    productivity. See <https://eartharxiv.org/repository/view/2294/> for a description of the methods used in 
+    the package to calculate the indicator.
 Depends: R (>= 3.6.0)
 Imports: raster, dplyr, stats, data.table, virtualspecies, magrittr,
         rgdal, parallel
@@ -19,14 +19,14 @@ VignetteBuilder: knitr
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 URL: https://github.com/xavi-rp/LPDynR
 BugReports: https://github.com/xavi-rp/LPDynR/issues
 NeedsCompilation: no
-Packaged: 2021-01-18 12:12:42 UTC; xavi_rp
+Packaged: 2021-05-19 07:54:30 UTC; xavi_rp
 Author: Xavier Rotllan-Puig [aut, cre],
   Eva Ivits [aut],
   Michael Cherlet [aut]
 Maintainer: Xavier Rotllan-Puig <xavier.rotllan.puig@aster-projects.cat>
 Repository: CRAN
-Date/Publication: 2021-01-21 09:10:05 UTC
+Date/Publication: 2021-05-19 08:40:02 UTC

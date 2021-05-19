@@ -4,12 +4,20 @@
 \alias{EFT_clust}
 \title{EFT_clust}
 \usage{
-EFT_clust(obj2clust = NULL, n_clust = 20, filename = "", ...)
+EFT_clust(
+  obj2clust = NULL,
+  n_clust = 20,
+  standardise_vars = TRUE,
+  filename = "",
+  ...
+)
 }
 \arguments{
 \item{obj2clust}{RasterStack or RasterBrick object (or its file name). Each layer is one variable}
 
 \item{n_clust}{Numeric. Number of total clusters. Optional. Default = 20}
+
+\item{standardise_vars}{Logical. Optional. If TRUE (default), variables are standardised (mean = 0; sd = 1)}
 
 \item{filename}{Character. Output filename. Optional}
 
@@ -29,6 +37,8 @@ produces a scree plot to help the user to decide the optimal number of clusters.
 
 EFT_clust passes as default to \code{\link[stats]{kmeans}} iter.max = 500 and algorithm = "MacQueen", but these can be
 modified passing these arguments through '...'
+
+Please note that the variables are standardised (mean = 0; sd = 1) before running the clustering
 
 An evaluation of the clustering is provided together with the RasterLayer object.
 It is calculated as model$betweenss / model$totss * 100;
